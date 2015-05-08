@@ -82,7 +82,8 @@
     "leaflet.markercluster": "0.4.0",
     "ngGeolocation": "git://github.com/rjmackay/ngGeolocation",
     "nvd3": "git://github.com/novus/nvd3#v1.7.1",
-    "underscore": "^1.7.0"
+    "underscore": "^1.7.0",
+    "platform-pattern-library" : "git+https://github.com/ushahidi/platform-pattern-library#gh-pages"
   },
   "engines": {
     "node": ">=0.10"
