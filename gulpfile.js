@@ -91,7 +91,7 @@ var helpers = {
  * Converts SASS files to CSS
  */
 gulp.task('sass', ['rename'], function() {
-    return gulp.src(['sass/style.scss'])
+    return gulp.src(['sass/client.scss'])
         .pipe(plumber({
             errorHandler: errorHandler
         }))
@@ -124,8 +124,7 @@ gulp.task('sass', ['rename'], function() {
 gulp.task('css', [], function() {
     return gulp.src([
                     'bower_components/font-awesome/css/*',
-                    'bower_components/bootstrap/dist/css/*',
-                    'bower_components/bootstrap-rtl/dist/css/*',
+                    'node_modules/platform-pattern-library/assets/css/*',
                     ])
         .pipe(gulp.dest(options.www + '/css'));
 });
